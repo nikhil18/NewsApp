@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             mProgressBar.setVisibility(View.VISIBLE);
         }
 
-        String url = "https://content.guardianapis.com/search?q=" + query + "&from-date=2017-09-01&api-key=test&page-size=30&show-tags=contributor";
+        String url = "https://content.guardianapis.com/search?q=" + query + "&order-by=newest&api-key=test&page-size=30&show-tags=contributor";
         return new NewsLoader(MainActivity.this, url);
     }
 
